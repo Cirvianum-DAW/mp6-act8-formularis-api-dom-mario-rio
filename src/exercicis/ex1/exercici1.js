@@ -70,5 +70,5 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
     const storedFormData = sessionStorage.getItem('formData');
     console.log(storedFormData);
 
-    window.location.href = 'exercici2.html';
+    window.location.href = '../ex2/exercici2.html';
 }) 
