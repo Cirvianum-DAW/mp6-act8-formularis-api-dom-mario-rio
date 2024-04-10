@@ -4,9 +4,9 @@ document.getElementById('weatherForm').addEventListener('submit', async function
     event.preventDefault();
 
     // Obtenim els valors dels camps del formulari.
-    let ciutat = document.getElementById('ciutat').value;
-    let codiPostal = document.getElementById('codiPostal').value;
-    let pais = document.getElementById('pais').value;
+    let ciutat = document.querySelector('#ciutat').value;
+    let codiPostal = document.querySelector('#codiPostal').value;
+    let pais = document.querySelector('#pais').value;
 
     // Si no s'han introduït la ciutat o el codi postal, mostrem un missatge d'alerta i sortim de la funció.
     if (!ciutat || !codiPostal) {
