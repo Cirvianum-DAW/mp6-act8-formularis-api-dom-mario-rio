@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercici 1 - Validació de Formulari</title>
+</head>
+<body>
+    <h2>Formulari de registre</h2>
+    <!-- novalidate = Anul·lem les validacions automàtiques d'html -->
+    <form id="registerForm" novalidate> 
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="surname">Cognom:</label><br>
+        <input type="text" id="surname" name="surname"><br>
+        
+        <label for="email">Correu electrònic:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="password">Contrasenya:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni"><br>
+
+        <label for="birthdate">Data de naixement:</label><br>
+        <input type="date" id="birthdate" name="birthdate"><br>
+
+        <label for="gender">Gènere:</label><br>
+        <select id="gender">
+            <option value="male">Home</option>
+            <option value="famale">Dona</option>
+            <option value="no-binari">No binari</option>
+            <option value="other">Altres</option>
+        </select>
+        <br>
+
+        <label for="conditions">Accepto els termes i condicions:</label>
+        <input type="checkbox" id="conditions" name="conditions"><br>
+        <br>
+
+        <input type="submit" value="Registrar-me">
+    </form>
+    <script src="exercici1.js"></script>
+</body>
+</html>
